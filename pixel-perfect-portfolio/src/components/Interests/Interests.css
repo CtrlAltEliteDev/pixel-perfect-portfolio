@@ -1,0 +1,18 @@
+.interests {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.interests h2 {
+  font-size: 2rem;
+}
+
+.interests ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.interests li {
+  margin-bottom: 8px;
+}

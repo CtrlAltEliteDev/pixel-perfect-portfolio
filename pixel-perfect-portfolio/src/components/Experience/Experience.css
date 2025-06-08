@@ -1,0 +1,27 @@
+.experience {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+}
+
+.experience h2 {
+  font-size: 2rem;
+}
+
+.experience h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.experience p {
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.experience ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.experience li {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,15 @@
+.skills {
+  padding: 40px 20px;
+}
+
+.skills h2 {
+  font-size: 2rem;
+}
+
+.skills h3 {
+  margin-top: 15px;
+}
+
+.skills p {
+  margin: 5px 0;
+}

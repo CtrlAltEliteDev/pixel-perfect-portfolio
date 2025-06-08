@@ -1,0 +1,12 @@
+.projects {
+  padding: 40px 20px;
+}
+
+.projects h2 {
+  font-size: 2rem;
+}
+
+.projects p {
+  margin-top: 10px;
+  color: #666;
+}
