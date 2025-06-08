@@ -1,18 +1,57 @@
+@use '../../variables' as *;
+
 .interests {
-  padding: 40px 20px;
-  background-color: #f0f0f0;
-}
+  background-color: $section-bg;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.4);
 
-.interests h2 {
-  font-size: 2rem;
-}
+  h2 {
+    color: $primary-accent;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
 
-.interests ul {
-  list-style-type: circle;
-  padding-left: 20px;
-  margin-top: 10px;
-}
+  ul {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
 
-.interests li {
-  margin-bottom: 8px;
+    li {
+      position: relative;
+      padding-left: 25px;
+      color: $text-color;
+      font-size: 1.1rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+
+      &::before {
+        content: "➤";
+        position: absolute;
+        left: 0;
+        color: $secondary-accent;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
+        color: $secondary-accent;
+        transform: translateX(5px);
+      }
+    }
+  }
+
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+
+    ul {
+      grid-template-columns: 1fr;
+    }
+
+    li {
+      font-size: 1rem;
+    }
+  }
 }

@@ -1,16 +1,6 @@
-// App.scss
+@import './_variables.scss';
 
-// COLORS
-$bg-color: #0d0d0d;
-$section-bg: #1a1a1a;
-$primary-accent: #9b5de5;
-$secondary-accent: #ffd700;
-$text-color: #f0f0f0;
-
-// FONTS
-$font-family: 'Montserrat', 'Roboto', sans-serif;
-
-// GLOBAL RESET
+/* GLOBAL RESET */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +8,7 @@ $font-family: 'Montserrat', 'Roboto', sans-serif;
 }
 
 body {
+  display: block;
   background-color: $bg-color;
   color: $text-color;
   font-family: $font-family;
@@ -25,40 +16,10 @@ body {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: $section-bg;
-  text-align: center;
-  padding: 25px;
-  border-bottom: 2px solid $primary-accent;
-  box-shadow: 0 0 20px rgba(155, 93, 229, 0.5);
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: $primary-accent;
-}
-
-section {
-  background-color: $section-bg;
-  padding: 60px 20px;
-  margin: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(155, 93, 229, 0.3);
-}
-
-h2, h3 {
-  color: $primary-accent;
-  margin-bottom: 15px;
-}
-
-ul li::before {
-  content: "➤ ";
-  color: $secondary-accent;
-}
-
 a {
   color: $secondary-accent;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
@@ -82,15 +43,11 @@ button:hover {
   box-shadow: 0 0 10px $secondary-accent;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
+section {
+  padding: 60px 20px;
   background-color: $section-bg;
-  border-top: 2px solid $primary-accent;
-  color: $secondary-accent;
-  font-size: 0.9rem;
-}
-
-footer:hover {
-  color: #fff;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.3);
 }

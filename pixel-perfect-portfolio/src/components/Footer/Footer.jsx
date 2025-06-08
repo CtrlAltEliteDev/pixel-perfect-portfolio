@@ -4,7 +4,7 @@ import './Footer.scss';
 const Footer = () => {
   return (
     <footer>
-      <p>© 2025 Riya Biswas. All rights reserved.</p>
+      <p>© 2025 CtrlAltEliteDev | Built with React ⚛️ | Wakanda Forever ✊🏾✨</p>
     </footer>
   );
 };
