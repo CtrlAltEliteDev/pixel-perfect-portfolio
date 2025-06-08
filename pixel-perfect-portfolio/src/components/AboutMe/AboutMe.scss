@@ -35,3 +35,25 @@
     margin-bottom: 20px;
   }
 }
+.hire-me-button {
+  width:17%;
+  background-color: $primary-accent;
+  border: none;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hire-me-button:hover {
+  background-color: $secondary-accent;
+  box-shadow: 0 0 10px $secondary-accent;
+  color: #0d0d0d; // makes text dark on hover for contrast (optional)
+}
