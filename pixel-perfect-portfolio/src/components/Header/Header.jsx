@@ -4,10 +4,9 @@ import './Header.scss';
 const Header = () => {
   return (
     <header className="site-header">
-      <div className="logo">
-        <h1>CtrlAltEliteDev</h1>
-        <p>Elite Full Stack Developer</p>
-      </div>
+    <div className="logo">
+  <h1 className="avenger-logo">Riya Biswas</h1>
+</div>
       <nav className="navbar">
         <a href="#hero">Home</a>
         <a href="#about">About</a>
