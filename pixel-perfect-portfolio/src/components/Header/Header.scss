@@ -1,6 +1,16 @@
 @use '../../variables' as *;
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 30px;
+  border: none;
+  box-shadow: none;
+}
 .avenger-logo {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 3.5rem;
@@ -11,6 +21,35 @@
   -webkit-text-fill-color: transparent;
   text-shadow: 0 0 10px rgba(155, 93, 229, 0.7), 0 0 20px rgba(255, 215, 0, 0.5);
   animation: flicker 2s infinite alternate;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: rgba(26, 26, 26, 0.9);
+  border: 2px solid $primary-accent;
+  border-radius: 50px;
+  padding: 12px 30px;
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  backdrop-filter: blur(6px);
+}
+
+.navbar a {
+  color: $secondary-accent;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: $primary-accent;
+  transform: scale(1.1);
 }
 
 @keyframes flicker {
@@ -19,52 +58,5 @@
   }
   100% {
     text-shadow: 0 0 20px rgba(155, 93, 229, 0.9), 0 0 30px rgba(255, 215, 0, 0.7);
-  }
-}
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: $section-bg;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  border-bottom: 2px solid $primary-accent;
-  box-shadow: 0 0 20px rgba(155, 93, 229, 0.5);
-  animation: pulseGlow 3s infinite alternate;
-}
-
-.logo h1 {
-  font-size: 1.8rem;
-  color: $primary-accent;
-}
-
-.logo p {
-  font-size: 0.9rem;
-  color: $secondary-accent;
-}
-
-.navbar a {
-  margin-left: 20px;
-  color: $secondary-accent;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.navbar a:hover {
-  color: $primary-accent;
-  transform: scale(1.1);
-}
-
-@keyframes pulseGlow {
-  from {
-    box-shadow: 0 0 10px rgba(155, 93, 229, 0.3);
-  }
-  to {
-    box-shadow: 0 0 30px rgba(155, 93, 229, 0.7);
   }
 }
