@@ -1,15 +1,35 @@
+@use '../../variables' as *;
+
 .skills {
-  padding: 40px 20px;
-}
+  background-color: $section-bg;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.4);
 
-.skills h2 {
-  font-size: 2rem;
-}
+  h2 {
+    color: $primary-accent;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 
-.skills h3 {
-  margin-top: 15px;
-}
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
 
-.skills p {
-  margin: 5px 0;
+    div {
+      background-color: #222;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      border: 1px solid $primary-accent;
+      color: $text-color;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 10px $secondary-accent;
+      }
+    }
+  }
 }

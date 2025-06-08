@@ -1,27 +1,40 @@
+@use '../../variables' as *;
+
 .experience {
-  padding: 40px 20px;
-  background-color: #f0f0f0;
-}
+  background-color: $section-bg;
+  padding: 60px 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(155, 93, 229, 0.4);
 
-.experience h2 {
-  font-size: 2rem;
-}
+  h2 {
+    color: $primary-accent;
+  }
 
-.experience h3 {
-  margin-top: 10px;
-  font-size: 1.2rem;
-}
+  h3 {
+    margin-top: 15px;
+    color: $secondary-accent;
+  }
 
-.experience p {
-  margin-top: 5px;
-  font-style: italic;
-}
+  p {
+    font-style: italic;
+    margin: 5px 0 15px;
+    color: $text-color;
+  }
 
-.experience ul {
-  margin-top: 10px;
-  padding-left: 20px;
-}
+  ul {
+    padding-left: 20px;
 
-.experience li {
-  margin-bottom: 8px;
+    li {
+      margin-bottom: 8px;
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        content: "➤";
+        position: absolute;
+        left: 0;
+        color: $secondary-accent;
+      }
+    }
+  }
 }
