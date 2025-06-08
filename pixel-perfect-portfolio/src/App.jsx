@@ -1,9 +1,8 @@
 import React from 'react'
 import './App.scss'
-
+import GlitterEffect from './components/GlitterEffect/GlitterEffect';
 // Import your components
 import Header from './components/Header/Header'
-import HeroSection from './components/HeroSection/HeroSection'
 import AboutMe from './components/AboutMe/AboutMe'
 import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
@@ -16,15 +15,18 @@ import Footer from './components/Footer/Footer'
 function App() {
   return (
     <>
+       <GlitterEffect />
       <Header />
-      <HeroSection />
-      <AboutMe />
-      <Experience />
-      <Skills />
-      <Education />
-      <Projects />
-      <Interests />
-      <Contact />
+      <main className="main-content">
+        <AboutMe />
+      </main>
+        <Experience />
+        <Skills />
+        <Education />
+        <Projects />
+        <Interests />
+        <Contact />
+      
       <Footer />
     </>
   )

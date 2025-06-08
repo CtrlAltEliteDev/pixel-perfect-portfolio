@@ -1,13 +1,23 @@
+@use '../../variables' as *;
 .about-me {
-  padding: 40px 20px;
-}
+  text-align: left; // Align text left
+  color: $text-color;
+  max-width: 800px;
+  margin: 20px auto 20px 40px; // Move it to left side
+  padding: 20px 30px;
+  min-height: 100vh;
 
-.about-me h2 {
-  font-size: 2rem;
-}
 
-.about-me p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin-top: 10px;
+  h2 {
+    font-size: 2rem;
+    color: $primary-accent;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: $text-color;
+    line-height: 1.8;
+  }
 }

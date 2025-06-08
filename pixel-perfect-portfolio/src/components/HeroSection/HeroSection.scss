@@ -1,39 +1,24 @@
 @use '../../variables' as *;
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 20px;
-  background-color: $section-bg;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(155, 93, 229, 0.4);
-}
 
-.hero-section h1 {
-  overflow: hidden;
-  border-right: .15em solid $primary-accent;
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-  font-size: 2rem;
-  color: $primary-accent;
-}
 
-.hero-section p {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: $text-color;
-}
+  h1 {
+    font-size: 3rem;
+    color: $primary-accent;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  p {
+    font-size: 1.2rem;
+    color: $text-color;
+    line-height: 1.8;
+  }
 }
-
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: $primary-accent; }
+.hero-section, .about-me {
+  text-align: left;
+  width: 100%; // let parent control width
+  padding: 0; // minimal padding, or small if needed
+  background: none; // if you want a clean look like the image
 }
