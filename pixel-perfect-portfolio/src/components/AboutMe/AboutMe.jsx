@@ -27,6 +27,7 @@ const AboutMe = () => {
     <button className="hire-me-button">
         Hire Me 
       </button>
+      <div className="scroll-down-indicator">⌄</div> 
     </section>
   );
 };
