@@ -28,6 +28,21 @@ const AboutMe = () => {
         Hire Me 
       </button>
       <div className="scroll-down-indicator">⌄</div> 
+      {/* New Stats */}
+      <div className="about-stats">
+        <div className="stat">
+          <div className="number">2+</div>
+          <div className="label">Years of Experience</div>
+        </div>
+        <div className="stat">
+          <div className="number">7+</div>
+          <div className="label">Completed Projects</div>
+        </div>
+        <div className="stat">
+          <div className="number">10K+</div>
+          <div className="label">Hours Worked</div>
+        </div>
+      </div>
     </section>
   );
 };
