@@ -8,7 +8,6 @@ import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
 import Education from './components/Education/Education'
 import Projects from './components/Projects/Projects'
-import Interests from './components/Interests/Interests'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
