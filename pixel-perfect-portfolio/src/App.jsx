@@ -24,7 +24,6 @@ function App() {
         <Experience />
         <Education />
         <Projects />
-        <Interests />
         <Contact />
       
       <Footer />

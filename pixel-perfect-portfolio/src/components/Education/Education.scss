@@ -1,0 +1,68 @@
+@use '../../variables' as *;
+
+.education {
+  position: relative;
+  padding: 60px 20px;
+  color: $text-color;
+  font-family: $font-family;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: $secondary-accent;
+    position: relative;
+    z-index: 1;
+  }
+
+  .education-item {
+    position: relative;
+    background-color: $section-bg;
+    padding: 20px;
+    border-radius: 12px;
+    border: 2px solid $primary-accent;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    // Add a subtle hover effect:
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(155, 93, 229, 0.4);
+    }
+
+    // Badge on top:
+    &::before {
+      content: "🎓";
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $section-bg;
+      padding: 5px 10px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      border: 2px solid $primary-accent;
+      z-index: 2;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+      color: $primary-accent;
+      margin-bottom: 8px;
+      position: relative;
+      z-index: 1;
+    }
+
+    p {
+      font-size: 1rem;
+      color: $text-color;
+      margin: 4px 0;
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
